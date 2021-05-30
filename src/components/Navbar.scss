@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  .badge {
+    width: 50px;
+    font-size: 15px;
+  }
+}
