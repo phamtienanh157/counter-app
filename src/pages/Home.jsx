@@ -20,7 +20,7 @@ export default function Home() {
   const handleDec = (counter) => {
     const list = [...counters];
     const index = list.indexOf(counter);
-    list[index].value -= 1;
+    list[index].value -= list[index].value > 0 ? 1 : 0;
     setCounters(list);
   };
   const handleDel = (id) => {
