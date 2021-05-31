@@ -12,12 +12,12 @@ export default function Counter(props) {
   const getBadgeClasses = () => {
     let classes = "badge bg-";
     classes += counter.value === 0 ? "warning" : "primary";
+    return classes;
   };
-
   return (
     <div className="row item">
       <div className="col">
-        <span class={getBadgeClasses()}>1</span>
+        <span class={getBadgeClasses()}>{counter.value}</span>
       </div>
       <div className="col">
         <button class="btn btn-success" onClick={() => onIncrement(counter)}>

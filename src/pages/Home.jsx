@@ -11,15 +11,24 @@ export default function Home() {
   const reload = () => {
     window.location.reload();
   };
-  const handleInc = () => {
-    return counters;
+  const handleInc = (counter) => {
+    const list = [...counters];
+    const index = list.indexOf(counter);
+    list[index].value += 1;
+    setCounters(list);
   };
-  const handleDec = () => {};
-  const handleDel = () => {};
-  console.log(counters);
+  const handleDec = (counter) => {
+    const list = [...counters];
+    const index = list.indexOf(counter);
+    list[index].value -= 1;
+    setCounters(list);
+  };
+  const handleDel = (id) => {
+    setCounters(counters.filter((counter) => counter.id !== id));
+  };
   return (
     <div className="container d-flex flex-column align-items-center ">
-      <Navbar />
+      <Navbar number={counters.filter((counter) => counter.value > 0).length} />
       <CounterList
         counters={counters}
         reload={reload}
