@@ -1,8 +1,8 @@
-import PropsType from "prop-types";
+import PropTypes from "prop-types";
 import cart from "../assets/images/cart.svg";
 import "./Navbar.scss";
-Navbar.prototype = {
-  number: PropsType.number,
+Navbar.PropTypes = {
+  number: PropTypes.number,
 };
 export default function Navbar(props) {
   return (

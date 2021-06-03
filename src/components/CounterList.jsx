@@ -1,11 +1,11 @@
-import PropsType from "prop-types";
-import Counter from "./Counter";
+import PropTypes from "prop-types";
+import Counter from "./Counter/Counter";
 CounterList.prototype = {
-  handleInc: PropsType.func,
-  handleDec: PropsType.func,
-  handleDel: PropsType.func,
-  counters: PropsType.array,
-  reload: PropsType.func,
+  handleInc: PropTypes.func,
+  handleDec: PropTypes.func,
+  handleDel: PropTypes.func,
+  counters: PropTypes.array,
+  reload: PropTypes.func,
 };
 
 export default function CounterList(props) {
