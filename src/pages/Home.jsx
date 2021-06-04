@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import CounterList from "../components/CounterList";
+import CounterList from "../components/CounterList/CounterList";
 
 export default function Home() {
   const [counters, setCounters] = useState([

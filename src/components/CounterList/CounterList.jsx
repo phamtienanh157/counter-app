@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import Counter from "./Counter/Counter";
+import Counter from "../Counter/Counter";
+
 CounterList.prototype = {
   handleInc: PropTypes.func,
   handleDec: PropTypes.func,
